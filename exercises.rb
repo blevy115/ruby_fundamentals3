@@ -56,3 +56,43 @@ siblings.select do |name, age|
 puts fav_colours[-2..-1]
 siblings_age.each {|age| puts "#{age+1}"}
 puts fav_colours << ["silver", "maroon"]
+
+#Exercise6
+movies_by_year = {1991 => ["The Matrix", "Star Wars: Episode 1", "The Mummy"],
+  2009 => ["Avatar", "Star Trek", "District 9"],
+  2019 => ["How to Train Your Dragon 3", "Toy Story 4", "Star Wars: Episode:9"]}
+phone_buttons = [[1, 2, 3],[4, 5, 6],[7, 8, 9]]
+countries = [{:Canada =>["America", "Not an Island"]},
+ {:Russia => ["Asia", "Not an Island"]},
+ {:Madagascar => ["Africa", "Island"]}]
+
+message = "I will not skateboard in the halls"
+5.times {puts message}
+array = []
+20.times{array << message}
+counting =*(1..50)
+# print counting
+sum = 0
+counting.each do |number|
+  sum+=number
+end
+# puts sum
+counting_new =[]
+3.times{counting_new << counting}
+counting_new.flatten!.sort!
+puts counting_new
+
+# print countries
+countries_island =[]
+countries_not_island = []
+countries.each do |country|
+  country.each do |name, info|
+    if info[1] == "Island"
+      countries_island << country
+    elsif info[1] == "Not an Island"
+      countries_not_island << country
+    end
+  end
+end
+print countries_island
+print countries_not_island
