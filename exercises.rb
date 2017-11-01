@@ -2,7 +2,7 @@
 fav_colours = ["blue", "orange", "gold", "burgundy", "emerald"]
 siblings_age = [25, 23, 20, 17]
 coin_flip = ["heads", "tails", "heads", "tails", "tails"]
-fav_artists = ["The Eagles","Rolling Stones", "Beatles"]
+fav_artists = ["The Eagles","Rolling Stones", "The Beatles"]
 fav_colours_symbol = [:blue, :orange, :gold, :burgundy, :emerald]
 
 words_def = {:assistance => "the action of helping someone with a job or task.",
@@ -19,3 +19,11 @@ puts fav_colours[0]
 puts siblings_age.sort
 siblings[:Baby] = 0
 puts fav_movies[:Space_Balls]
+
+#Exercise2
+puts fav_colours_symbol[-1]
+fav_cities[:Vancouver] = 647540
+puts fav_cities
+coin_flip.reverse!
+puts fav_cities[:New_York]
+fav_artists.each { |artist| puts "I think #{artist} are great" }
