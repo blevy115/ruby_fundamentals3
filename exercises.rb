@@ -43,3 +43,16 @@ puts siblings_age.max
 puts coin_flip.each.count {|flip| flip == "heads"}
 fav_artists.pop(1)
 fav_cities[:Amsterdam] = 1.0*10**6
+
+#Exercise5
+puts fav_cities.values.sum
+siblings.select do |name, age|
+  if (age < 22)
+    puts "#{name} is young"
+  elsif (age > 22)
+    puts "#{name} is old"
+  end
+  end
+puts fav_colours[-2..-1]
+siblings_age.each {|age| puts "#{age+1}"}
+puts fav_colours << ["silver", "maroon"]
