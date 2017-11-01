@@ -1,6 +1,6 @@
 #Exercise 0
 fav_colours = ["blue", "orange", "gold", "burgundy", "emerald"]
-siblings_age = [25, 23, 20, 17]
+siblings_age = [23, 25, 17, 20]
 coin_flip = ["heads", "tails", "heads", "tails", "tails"]
 fav_artists = ["The Eagles","Rolling Stones", "The Beatles"]
 fav_colours_symbol = [:blue, :orange, :gold, :burgundy, :emerald]
@@ -9,7 +9,7 @@ words_def = {:assistance => "the action of helping someone with a job or task.",
 :compulsion => "the action or state of forcing or being forced to do something; constraint.",
 :vendor => "a person or company offering something for sale, especially a trader in the street."}
 
-fav_movies = {:Space_Balls => 1987, :The_Matrix => 1999, :The_Dark_Knight => 2008}
+fav_movies = {"Space Balls" => 1987, "The Matrix" => 1999, "The Dark Knight" => 2008}
 fav_cities = {:Toronto => 2.809*10**6, :New_York => 8.535*10**6, :Amsterdam => 821752}
 siblings = {:Brandon => 25, :Megan => 23, :Shannon => 20, :Jayden => 17}
 
@@ -27,3 +27,10 @@ puts fav_cities
 coin_flip.reverse!
 puts fav_cities[:New_York]
 fav_artists.each { |artist| puts "I think #{artist} are great" }
+
+#Exercise3
+puts fav_artists[0..1]
+fav_movies.each { |movie, year| puts "#{movie} came out in #{year}."}
+puts siblings_age.sort.reverse!
+fav_movies["Beauty and the Beast"] = [1991, 2017]
+puts fav_movies
