@@ -87,12 +87,32 @@ countries_island =[]
 countries_not_island = []
 countries.each do |country|
   country.each do |name, info|
-    if info[1] == "Island"
+    if info.last == "Island"
       countries_island << country
-    elsif info[1] == "Not an Island"
+    elsif info.last == "Not an Island"
       countries_not_island << country
     end
   end
 end
-print countries_island
-print countries_not_island
+puts countries_island
+puts countries_not_island
+
+#Exercise7
+expenses = [250, 7.95, 30.95, 16.50]
+# expense_total = 0
+# expenses.each do |expense|
+#   expense_total += expense
+# end
+# puts expense_total
+def expense_calculator (expense)
+  expense_total = 0
+  expense.each do |expense|
+    expense_total += expense
+  end
+  puts expense_total
+end
+
+expense_calculator (expenses)
+
+expenses2 = [206, 34.78, 154, 34.0, 26.98]
+expense_calculator (expenses2)
