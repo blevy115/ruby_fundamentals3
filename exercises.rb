@@ -34,3 +34,12 @@ fav_movies.each { |movie, year| puts "#{movie} came out in #{year}."}
 puts siblings_age.sort.reverse!
 fav_movies["Beauty and the Beast"] = [1991, 2017]
 puts fav_movies
+
+#Exercise4
+# puts siblings.select {|name, age| age<23}
+print siblings_age.select {|age| age < 23 }
+# siblings.select {|name, age| puts "#{age}" if age == age.max end}
+puts siblings_age.max
+puts coin_flip.each.count {|flip| flip == "heads"}
+fav_artists.pop(1)
+fav_cities[:Amsterdam] = 1.0*10**6
