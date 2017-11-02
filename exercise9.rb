@@ -27,3 +27,11 @@ students.each do |cohort, number|
   sum += number
 end
 puts sum
+
+staff = {
+  :cohort1 => 1,
+  :cohort2 => 3,
+  :cohort3 => 4
+}
+
+display_cohort staff
