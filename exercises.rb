@@ -116,3 +116,30 @@ expense_calculator (expenses)
 
 expenses2 = [206, 34.78, 154, 34.0, 26.98]
 expense_calculator (expenses2)
+
+#Exercise8
+grocery_list = ["bacon", "peanuts", "salmon", "doritos", "steak", "pasta",]
+def grocery_output (grocery_list)
+  grocery_list.each do |item|
+    puts "* #{item}"
+  end
+end
+
+grocery_output (grocery_list)
+
+grocery_list_update = grocery_list << "rice"
+grocery_output (grocery_list_update)
+puts grocery_list_update.length
+
+if grocery_list_update.include? "bananas"
+  puts "You need to pick up bananas"
+else
+  puts "You don't need to pick up bananas today"
+end
+
+puts grocery_list_update[1]
+
+puts grocery_list_update.sort
+
+grocery_list_update.delete("salmon")
+print grocery_list_update
